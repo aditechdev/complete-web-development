@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <h3> This is about forms</h3>
+    <form action="backend.php">
+       Name: <input type="text">
+       ROll: <input type="text">
+       <br>
+       <br>
+
+       So here I have two option to make row 
+       <br>
+       <br>
+       <div>
+        Name: <input type="text">
+       </div>
+       <br>
+
+       <div>
+        ROll: <input type="text">
+       </div>
+
+       or use br
+       <br>
+       <br>
+    
+
+       Name: <input type="text">
+       <br>
+       ROll: <input type="text">
+
+       But we will avoid br and use css for space.
+
+
+    </form>
+    <br>
+New Form 
+    <hr>
+    <form action="backend.php">
+
+        <!-- name attribute will help the backend to take data  -->
+        
+        <div>
+            Name: <input type="text" name="myName">
+        </div>
+        <br>
+
+        Use label to make the option selected by text, the above name is not selected and my role is selected.
+        <br>
+        label for and input type id should same <br>
+        <label for="myRole">My Role: </label>
+
+
+        <div>
+            <input type="text" name="myRole" id="myRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="date">
+        </div>
+        <br>
+        <div>
+            Date: <input type="number" name="number">
+        </div>
+        <br>
+        <div>
+            Are you eligible: <input type="checkbox" name="myEligibility">
+        </div>
+        <br>
+        Use the atribute checked to make the check box by default check.
+        <br>
+        <div>
+            Are you eligible: <input type="checkbox" name="myEligibility" checked>
+        </div>
+        <br>
+
+        <div>
+            Gender: MAle <input type="radio" name="myGender" > Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            About You:
+            <br>
+            <textarea name="aboutYou" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <label for="car"></label>
+        <br>
+        use <strong>select</strong> attribute to auto select a option from select. 
+        <div>
+            Select a car that you have: <br>
+            <select name="myCar" id="car">
+                <option value="select" selected>select car</option>
+                <option value="merc">Mercidice</option>
+                <option value="land">Land Rover</option>
+                <option value="zing">ZIngat ZIngat</option>
+
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset">
+        </div>
+        
+        
+        
+    </form>
+    
+    
+    
+</body>
+</html>
