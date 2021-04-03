@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, border, background</title>
+    <style>
+        #firstPara{
+            background-color: saddlebrown;
+            height: 100px;
+            width: 455px;
+
+            /* to make it round*/
+            border-radius: 30px;
+            /* border width */
+            border-width: 4px;
+            border-color: slateblue;
+            border-style: solid; 
+        }
+
+            /* You can also write the whole border css is one line  */
+
+            #secondPara{
+                background-color: rgb(184, 158, 199);
+                height: 30px;
+                width: 400px;
+                border: solid 2px green;
+                /* Use the border for downl or any other side  */
+                border-bottom: hotpink 2px solid;
+
+                /* To add radious to the border  */
+
+                border-bottom-left-radius: 20px;
+
+            }
+
+            #thirdPara{
+
+                background-color: rgb(184, 158, 199);
+                /* to choose height of block  */
+                height: 500px;
+                /* to choose width of block  */
+                width: 455px;
+                /* to change background image  */
+                background-image: url(https://avatars3.githubusercontent.com/u/25683294?s=460&u=27ffafebe581a40aed0e1ba6e6842f174eb213e0&v=4);
+                /* to check border  */
+                border: 2px solid palevioletred;
+                /* to stop the repeat of image use no-repeat, to repeat in x direction use repeat-x, to repeat in y direction use repeat-y  */
+                background-repeat: no-repeat;
+
+                /* to fix the image at different position */
+                background-position: center top;
+
+    </style>
+
+
+</head>
+<body>
+    <h3>Height, width, border, background</h3>
+    <p id="firstPara">This is first para</p>
+    <p id="secondPara">This is the second para with one line code in CSS</p>
+    <p id="thirdPara">This is third para </p>
+    
+</body>
+</html>
