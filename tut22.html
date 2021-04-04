@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psedo selector and more designing</title>
+    <style>
+
+        /* to add properpertiew to container class  */
+        .container{
+            border: 2px solid crimson;
+            background-color: darkgoldenrod;
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+            
+        
+         } 
+         /* to add effect on a href   */
+         a{
+             text-decoration: none;
+             color: black;
+             
+         }  
+         /* Its a psedo selector to add properties, when cursor goes to a href it will change effect */
+         a:hover{
+             color: dodgerblue;
+             background-color: chartreuse;
+
+         } 
+         /* If you will visit this website, it will change the color  */
+         a:visited{
+             color: crimson;
+             background-color: darkblue;
+         }
+         /* this is for active link  */
+         a:active{
+             background-color: darkred;
+             color: darkslateblue;
+
+         }
+         .btn{
+             background-color: darkseagreen;
+             padding: 6px;
+             border: none;
+             cursor: pointer;
+             font-size: 18px;
+             border-radius: 10px;
+                            }
+
+        
+    </style>
+  </head>
+  <body>
+    <h1>Psedo selector and more designing</h1>
+    <div class="container" id="cont1">
+      <h3>This is my heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae libero
+        rerum, repellat omnis impedit atque nisi quo optio nostrum, ad
+        temporibus error facere. Quia, quas impedit! Fugit veritatis est non,
+        perferendis dolorem accusantium dignissimos nostrum nam vel quis at
+        explicabo maiores? Incidunt exercitationem delectus sequi, quam a minus!
+        Quis, sunt.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit natus,
+        reprehenderit ullam hic quasi consequuntur placeat assumenda cum totam,
+        eaque, similique illo esse molestiae sed tenetur doloremque dolorum sit
+        eligendi neque harum repellendus. Aspernatur culpa officia accusantium
+        corrupti assumenda non consectetur, autem sequi exercitationem omnis
+        velit ad ipsam veniam facere asperiores incidunt similique nihil qui
+        unde distinctio. Quod maiores possimus ad numquam quo officiis magnam,
+        vero cumque autem quae quis?
+      </p>
+      <a href="https://www.google.com/" class="btn" target="_blank">Read More</a>
+      <button href="" class="btn">COntact us</button>
+    </div>
+  </body>
+</html>
