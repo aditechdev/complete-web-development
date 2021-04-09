@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox Tutorial</title>
+    <style>
+      .container {
+        height: 344px;
+        width: 100%;
+        border: 2px solid black;
+        /* Intialize the container as flex box  */
+        display: flex;
+        /* Flex properties for flex container */
+        /* Default value of flex-direction is row.  */
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+
+        /* flex-wrap to wrap the card for responsive design */
+        /* flex-wrap: wrap; */
+
+        /* This is shorthand of flex-direction and flex wrap   */
+        /* flex-flow: row-reverse wrap; */
+
+        /* justify-content: will justify content in horizontal direction ; */
+
+        /* to align anything in center  */
+
+        /* justify-content: center; */
+
+        /* to give space between every content with no space between start and end */
+        /* justify-content: space-between; */
+
+        /* This will give space between all the content evenly  */
+        /* justify-content: space-evenly; */
+
+        /* to have seperate and equal space for all the box  */
+
+        /* justify-content: space-around; */
+
+        /* align-items: will justify the content in vertical direction ; */
+
+        /* to keep everything vertically center  */
+
+        /* align-items: center; */
+
+        /* to bring the value down  */
+        /* align-items: flex-end; */
+
+        /* to get vertically evenly space  */
+
+        /* align-items: stretch; */
+      }
+      .item {
+        background-color: tomato;
+        border: 2px solid green;
+        margin: 10px;
+        padding: 10px;
+        height: 200px;
+        width: 200px;
+      }
+      #item-1 {
+        /* flex properties for a flex item  */
+        /* higher the order, later it shows up in the container  */
+
+        /* order: 2; */
+
+        /* to give more space  */
+
+        flex-grow: 6;
+
+        /* insted of giving negative number in flex-grow, use flex-shrink: ; */
+
+        /* if you want to restrict the item sizze, use flex-basis: ; */
+
+        /* when flex-direction: is set to row flex-basis: will control width: ;;; */
+        /* when flex-direction: is set to column flex-basis: will control height: ;;; */
+
+        flex-basis: 320px;
+      }
+      #item-2 {
+        flex-shrink: 5;
+        /* order: 4; */
+      }
+      #item-3 {
+        /* shorthand to use flex  */
+        /* flex: flex-grow flex-shrink flex-basis; */
+        /* flex: 2 2 230px; */
+
+        /* To fix the value as per your choice, currently its flex-end */
+
+        align-self: flex-end;
+      }
+      /* #item-4{
+
+        } */
+    </style>
+  </head>
+  <body>
+    <h3>Whats is flex box?</h3>
+
+    <p>
+      Flex box is one-dimensional layout method for laying out items in row or
+      columns
+    </p>
+    <p>
+      <strong>CSS flexbox</strong> is a better way to align items into a
+      container.
+    </p>
+    <p>flexbox = flexible + box</p>
+
+    <h1>This is flexbox</h1>
+    <div class="container">
+      <div class="item" id="item-1">First Box</div>
+      <div class="item" id="item-2">Second Box</div>
+      <div class="item" id="item-3">Third Box</div>
+      <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+  </body>
+</html>
