@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and after psedo-selector</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: seagreen;
+            color: silver;
+           }
+
+           /* to add backgroud and set opasity  */
+        header::before{
+            content: "";
+            background: url(https://source.unsplash.com/collection/190727/1600x900) no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.2;
+        }
+        section{
+            height: 344px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            margin: 3px 23px;
+            align-items: center;
+            
+        }
+
+        /* use before for adding something before  */
+
+        section::before{
+            content: "This is psedo content";
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        h3{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navBar">
+        <ul class="navigation">
+          <li class="item">Home</li>
+          <li class="item">About</li>
+          <li class="item">Services</li>
+          <li class="item">Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+      <section>
+        <h3>Welcome to coding world</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet expedita
+          aut eveniet facere temporibus eaque. Mollitia voluptatum distinctio
+          dolor delectus dignissimos suscipit in maiores voluptatibus, provident
+          modi magni expedita eum deserunt, numquam velit itaque?
+        </p>
+      </section>
+      
+  </body>
+</html>
