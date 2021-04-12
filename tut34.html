@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+      .container{
+        display: flex;
+      }
+      .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid red; */
+        background-color: seagreen;
+        /* Use this down and right box shadow  */
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: 10px 23px greenyellow; */
+
+        /* Use this for up and left box shadow  */
+        /* box-shadow: -10px -23px greenyellow; */
+
+        /* box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: 10px 23px 10px red; */
+
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+        box-shadow: 10px 23px 10px 2px red;
+
+        /* to give the box shadow inside  */
+
+        box-shadow: inset 3px 5px green;
+
+
+      }
+      .card{
+          /* text-shadow: 3px 4px green; */
+          text-shadow: 3px 4px 6px white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="car-1">
+        <h2>This is C++ course</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse,
+          consectetur cupiditate sapiente, ducimus est, sed cum doloribus
+          eligendi iusto expedita pariatur. At saepe magni in aliquid. Veniam
+          tempora, libero commodi repellat provident obcaecati ut!
+        </p>
+      </div>
+      <div class="card" id="car-2">
+        <h2>This is HTML course</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse,
+          consectetur cupiditate sapiente, ducimus est, sed cum doloribus
+          eligendi iusto expedita pariatur. At saepe magni in aliquid. Veniam
+          tempora, libero commodi repellat provident obcaecati ut!
+        </p>
+      </div>
+      <div class="card" id="car-3">
+        <h2>Card 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse,
+          consectetur cupiditate sapiente, ducimus est, sed cum doloribus
+          eligendi iusto expedita pariatur. At saepe magni in aliquid. Veniam
+          tempora, libero commodi repellat provident obcaecati ut!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
