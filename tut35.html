@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS variable/ Custom properties</title>
+    <style>
+      :root {
+        --primary-color: yellow;
+        --danger-color: red;
+        --maxw: 233px;
+      }
+      .box {
+        /* To use variable for color  */
+        /* This can be use only for local variable */
+        /* To use this color for other css, put the color in root  */
+        /* --primary-color:teal; */
+
+        width: 200px;
+        height: 200px;
+
+        /* to use the variable  */
+        background-color: var(--primary-color);
+        border: 2px solid var(--danger-color);
+        margin: 2px 9px;
+        box-shadow: 3px 3px var(--box-color);
+      }
+      .container {
+        display: flex;
+        max-width: var(--maxw);
+        margin: auto;
+        background-color: var(--danger-color);
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS variable/Custom properties</h1>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
