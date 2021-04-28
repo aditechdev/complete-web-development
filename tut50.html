@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript String Function</title>
+
+    <style>
+      /* for css */
+    </style>
+  </head>
+  <body>
+    <script>
+      // for javaScript
+
+      var str = "This is a string.";
+      console.log(str);
+      // index start with 0.
+      // this will give first occurance of substring.
+      // to know the position of string # output will be 2.
+      // Here, "this" 0 position = t,  1 position = h, 2 position is "is".
+      var position = str.indexOf("is");
+
+      // Last occurence od a substring.
+      position = str.lastIndexOf("is");
+
+      console.log(position);
+
+      // Slicing method
+      // *****Slicing method 1
+
+      // substring from a string
+      // this will take two position: Start and End position
+      // output will be "his i"
+      // Slice can take negative value, but substring cannot take negative value.
+      var subStr = str.slice(1, 6);
+      console.log(subStr);
+
+      // *****Slicing method 2
+      subStr = str.substring(1, 6);
+      console.log(subStr);
+
+      // ********** slicing method 3
+      console.log(str[2]); // to get the character at index 2.
+
+      // this will take the word from start index and end endex.
+
+      subStr = str.substr(1, 6);
+      console.log(subStr);
+
+      // this is used to replace the word.
+      // this will only change the new varible, but not the old variable.
+
+      var replace = str.replace("string", "Aditechdev");
+      console.log(replace);
+
+      // to convert it in the uper case.
+
+      console.log(str.toUpperCase());
+
+      // to convert in lover case.
+      console.log(str.toLowerCase());
+
+      // use concat method to join screen.
+      // you can also use + operator for concation.
+
+      var newString = str.concat(" New String");
+      console.log(newString);
+
+      var strWithWhiteSpaces = "     this contain       white spaces.   ";
+      console.log(strWithWhiteSpaces);
+      // .trim() will remove the white spaces.
+      // But this will only remove the white spaces from both side not from middlle.
+      console.log(strWithWhiteSpaces.trim());
+
+      //to give the character at index 2.
+      // in "this" character at index 2 is "i".
+
+      var char3 = str.charAt(2);
+      console.log(char3);
+
+      // This will give the character code of particular character according to UTF16
+      // Here character code of "i" according to "UTF16" is "105"
+
+      var char4 = str.charCodeAt(2);
+      console.log(char4);
+    </script>
+  </body>
+</html>
