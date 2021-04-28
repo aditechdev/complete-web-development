@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript | String and String method</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lorem ipsum, dolor sit</h1>
+      <div id="content">
+
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, beatae,
+        repudiandae repellat voluptas laboriosam blanditiis eum dolore sit odio
+        fugit molestiae tenetur mollitia! Eveniet, aut error molestiae deserunt
+        maxime ea dicta perferendis at quo!
+      </p>
+    </div>
+
+    <script>
+        // var string = "this";  !!! you can use " " or ' ' for string declaration
+        // var string = 'this';
+        // var string = 'th"is';  !!!! if you want to use " in between string then block the string with single quote '' or vice versa.
+        var string = 'th"is';
+        var name = 'adi';
+        var channel = 'aditechdev';
+        var message = 'he is fine';
+        var temp = `${name} is a nice person, "and" he is known as ${channel}`;
+
+        console.log(temp);
+        console.log(string + name + message); // concatanation of string by using + operator
+
+        var y = new String("Hello!") // creating string by contructor
+        console.log(y);
+
+        var length = name.length;  // to check length of words
+        console.log(`Length of the word name is ${length}`) // print the length using `` back ticks.
+
+        document.getElementById('content').innerHTML = '<h3> This is an h3 heading </h3>' //to insert value in document.
+
+
+    </script>
+  </body>
+</html>
