@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope and Conditionals</title>
+  </head>
+  <body>
+    <!-- div>ul>li{Item-$}*7  -->
+    <div>
+      <ul>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+        <li>Item-4</li>
+        <li>Item-5</li>
+        <li>Item-6</li>
+        <li>Item-7</li>
+      </ul>
+    </div>
+    <script>
+      var string1 = "This is a string";
+      var string1 = "This is a string2";
+      console.log(string1);
+      // Var Scope is global
+      // let scope is only for function
+      // let scope is block level scope.
+      // let also help in not declaring dublicate variable.
+
+      let string = "This is String 3";
+      console.log(string1);
+      console.log(string);
+
+      const a = "This is constant";
+      // a = "change this"  // constant cannot be changed.
+
+      // From here condition start
+
+      // If , else if, else
+      let age = 2;
+      if (age > 18) {
+        console.log("You can drink water");
+      } else if (age == 2) {
+        console.log("You are bitch");
+      } else {
+        console.log("You can drink cond-drink");
+      }
+
+      // Switch case
+      const cups = 45;
+      switch (cups) {
+        case 4:
+          console.log("The value of cup is 4");
+            break;
+
+        case 41:
+          console.log("The value of cup is 41");
+          break;
+
+        case 42:
+            console.log("The value of cup is 42");
+            break;
+            
+            default:
+            console.log("The value of cup is none of the above");
+        break;
+      }
+    </script>
+  </body>
+</html>
