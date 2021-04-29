@@ -1,82 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arrays & Object</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">Simple si html</div>
 
     <script>
+      // there are two type of values in javascript
+      //1) primitive
+      //2) referance / object
 
-        // there are two type of values in javascript 
-        //1) primitive
-        //2) referance / object
+      // example of primitve type datatypes
+      let myVar = 34; // integer
+      let myVar2 = "Hello"; //String
+      let myVar3 = true; //boolean
+      let myVar4 = null;
+      let myVar5 = undefined;
 
-        // example of primitve type datatypes
-        let myVar = 34; // integer
-        let myVar2 = "Hello" //String
-        let myVar3 = true //boolean
-        let myVar4 = null 
-        let myVar5 = undefined
+      // Example of referance or object type data type
+      let employee = {
+        name: "Adi",
+        salary: 10,
+        channel1: "aditya anand",
 
-        // Example of referance or object type data type 
-        let employee = {
-            name: "Adi",
-            salary: 10,
-            channel1: "aditya anand",
+        // if you want to put space in between  key channel and 2 then put it inside ""
+        "channel 2": "adiadi",
+      };
 
-            // if you want to put space in between  key channel and 2 then put it inside ""
-            "channel 2": 'adiadi'
-        }
+      // to get Element from above array
 
-        // to get Element from above array 
+      console.log(employee.name);
+      console.log(employee.channel2);
+      console.log(employee.salary);
 
-        console.log(employee.name);
-        console.log(employee.channel2);
-        console.log(employee.salary);
+      // or you can get element by this also
 
-        // or you can get element by this also 
+      console.log(employee["channel1"]);
+      console.log(employee["channel 2"]);
 
-         console.log(employee['channel1']);
-         console.log(employee['channel 2']);
+      console.log(employee);
 
-        console.log(employee);
-        
-        let names = [9,2,4, "Aditya", undefined];
-        console.log(names[3]);
+      let names = [9, 2, 4, "Aditya", undefined];
+      console.log(names[3]);
 
-        // Another way to make array 
-        let names1 = new Array(3,2,4,"adi",undefined);
+      // Another way to make array
+      let names1 = new Array(3, 2, 4, "adi", undefined);
 
-        // to get length
-        console.log(names1.length)
+      // to get length
+      console.log(names1.length);
 
-        // to sort array 
-        names1 = names1.sort();
-        // to push an array element 
-        names1.push("this is pushed");
-        console.log(names1);
+      // to sort array
+      names1 = names1.sort();
+      // to push an array element
+      names1.push("this is pushed");
+      console.log(names1);
 
+      // new array
+      let names3 = new Array(23, 45);
+      console.log(names3);
 
-        // new array 
-        let names3 = new Array(23, 45);
-        console.log(names3);
+      // to create 23 element array
 
-        // to create 23 element array 
-
-        let names4 = new Array(23);
-        console.log(names4[10]);
-
-        
-
-
-
-
-
+      let names4 = new Array(23);
+      console.log(names4[10]);
     </script>
-    
-</body>
+  </body>
 </html>
