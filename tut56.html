@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulating DOM</title>
+  </head>
+  <body>
+    <div id="main" class="container">
+      <ul id="nav">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>More About Us</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <script>
+      //   getting document by id
+      let main = document.getElementById("main");
+      console.log(main);
+      let nav = document.getElementById("nav");
+      console.log(nav);
+
+      let innerHtml = nav.innerHTML;
+      console.log("Inner html " + innerHtml);
+
+      //   To change the content inside nav
+
+      //   nav.innerHTML = "<li>Dynamic Element </li>"
+
+      // get Element by class
+      let container = document.getElementsByClassName("container");
+      console.log(container);
+
+      // CSS Selector
+      // it will return first result
+      let sel = document.querySelector(".container");
+      console.log("selector returns", sel);
+
+      let jail = document.querySelector("#nav>li");
+      console.log(jail);
+
+      // to get all the elements
+      let bail = document.querySelectorAll("#nav>li");
+      console.log(" Selector return: ", bail);
+      bail[0].innerHTML = "<li> Just changed </li>";
+    </script>
+  </body>
+</html>
