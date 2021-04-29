@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops</title>
+  </head>
+  <body>
+    <div class="container">This is about Loops.</div>
+
+    <script>
+      console.log("This is tutorial 55");
+
+      let i = 0;
+      for (i = 0; i < 3; i++) {
+        console.log(i);
+      }
+
+      let friends = ["Rohan", "Sanjeev", "Ramit", "Rahul", "Mitchel"];
+      for (let index = 0; index < friends.length; index++) {
+        console.log("Hello friend, " + friends[index]);
+      }
+
+      friends.forEach((element) => {
+        console.log(
+          "Hello friend, " +
+            element +
+            " from the ES6 arrow function (=>)  " +
+            "from modern javascript"
+        );
+      });
+
+      friends.forEach(function f(elements) {
+        console.log("Hello friend!, " + elements + " from modern javascript");
+      });
+
+      // for of loop
+
+      for (elements of friends) {
+        console.log(
+          "Hello friend!, " +
+            elements +
+            " from modern javascript" +
+            " for of loop"
+        );
+      }
+
+      // iterate objet by for loop
+
+      let employee = {
+        name: "vinod",
+        salary: 2,
+        "working hour": 18,
+        "channel name": "Adi",
+      };
+
+      // for in loop to iterate object
+
+      for (key in employee) {
+        console.log(`The ${key} of employee is ${employee[key]}`);
+      }
+
+      // while loop in js
+
+      let j = 0;
+      while (j < 45) {
+        console.log(`${j} is less than 45`);
+        j++;
+      }
+
+      let z = 34;
+      do {
+        // do while code run the app at least once.
+        console.log(`${z} is less than 4. from the do while loop`);
+        z++;
+      } while (z < 5);
+    </script>
+  </body>
+</html>

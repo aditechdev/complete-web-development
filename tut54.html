@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interaction Using alert, confirm, prompt</title>
+  </head>
+  <body>
+    <div class="container">This is a page</div>
+    <script>
+      // alert in in-browser java script
+      // alert is a function
+      // That popup the message
+      // This will open a modal window.
+      // Alert message doesnot return anything.
+
+      alert("This is the alert message");
+
+      // Prompt is use to get the user value
+      let name = prompt("What is your name?", "Guest");
+      console.log(name);
+
+      let deletePost = confirm("Do you really want to delet the post?");
+      console.log(deletePost);
+
+      // to create a method after delete
+
+      if (deletePost) {
+        console.log("You have deleted the post 🥲");
+      } else {
+        console.log("Your post is not deleted. 😃");
+      }
+    </script>
+  </body>
+</html>
